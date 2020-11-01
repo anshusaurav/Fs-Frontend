@@ -1,0 +1,43 @@
+{
+  "name": "story-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "aws-sdk": "^2.782.0",
+        "axios": "^0.18.0",
+        "prop-types": "^15.7.2",
+        "react": "^16.6.0",
+        "react-dom": "^16.6.0",
+        "react-scripts": "2.0.5",
+        "react-toastify": "^5.3.1",
+        "tailwindcss": "^1.9.6",
+        "uuid": "^8.3.1"
+  },
+  "scripts": {
+    "start": "npm run build:css && react-scripts start",
+    "build": "npm run build:css && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build:css": "postcss src/styles/tailwind.css -o src/styles/main.css"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "postcss-cli": "^8.0.0",
+    "tailwindcss": "^1.8.10"
+  }
+}
