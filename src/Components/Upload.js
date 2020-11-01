@@ -29,6 +29,7 @@ class Upload extends React.Component {
         return bucket.upload(params, (err, data) => {
 
             if (err) {
+                console.log(err)
                 toast.error("☣ Error Occured");
                 this.setState({ disabled: false })
                 return false;
