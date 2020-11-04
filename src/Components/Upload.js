@@ -14,6 +14,7 @@ const endPoint = "https://fs-backend-assessment.herokuapp.com/api/uploads";
 
 class Upload extends React.Component {
     constructor(props) {
+        console.log(process.env.REACT_APP_AWS_ACCESS_KEY_ID);
         super(props);
         this.state = { progress: 0, status: '', name: '', startTime: '', endTime: '', size: 0, disabled: false }
         this.fileInput = React.createRef();
